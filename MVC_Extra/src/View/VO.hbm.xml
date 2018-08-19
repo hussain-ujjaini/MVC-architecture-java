@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0/EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="View.VO" table="UserDetails">
+	
+		<id name="user_id" column="user_id">
+			<generator class="increment" />
+		</id>
+		<property name="firstName">
+			<column name="firstName"/>
+		</property> 
+		<property name="surName">
+			<column name="surName"/>
+		</property> 
+		<property name="email">
+			<column name="email"/>
+		</property>
+		<property name="mobile">
+			<column name="mobile"/>
+		</property> 
+	</class>
+
+</hibernate-mapping>
